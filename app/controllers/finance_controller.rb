@@ -1739,6 +1739,14 @@ class FinanceController < ApplicationController
     @batchs = []
     @dates = []
   end
+  
+  # HM TEMP
+  def fee_voucher
+    @courses = Course.active
+    @batchs = []
+    @dates = []
+  end
+  # HM END TEMP
 
   def update_batches
     @course = Course.find(params[:course_id])

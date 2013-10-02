@@ -922,6 +922,9 @@ authorization do
       :search_logic,
       :fees_received,
       :fees_defaulters,
+	  # HM TEMP
+	  :fee_voucher,
+	  #HM END TEMP
       :fees_submission_index,
       :fees_submission_batch,
       :update_fees_collection_dates,
@@ -1684,6 +1687,9 @@ authorization do
       :search_logic,
       :fees_received,
       :fees_defaulters,
+	  # HM TEMP
+	  :fee_voucher,
+	  #HM END TEMP
       :fees_submission_index,
       :fees_submission_batch,
       :update_fees_collection_dates,

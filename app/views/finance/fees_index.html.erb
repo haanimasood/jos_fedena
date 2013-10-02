@@ -53,7 +53,14 @@
       <div class="link-heading"><%= link_to "#{t('fees_defaulters_text')}", :action => "fees_defaulters" %></div>
       <div class="link-descr"><%= t('students_with_fees_dues') %> </div>
     </div>
-
+	
+	<%-# HM - TEMP -%>
+	<div class="link-box">
+      <div class="link-heading"><%= link_to "#{t('fees_print_text')}", :action => "fee_voucher" %></div>
+      <div class="link-descr"><%= t('students_print_voucher') %> </div>
+    </div>
+	<%-# HM END - TEMP -%>
+	
     <!-- Instant Fees -->
 
     <% FedenaPlugin::ADDITIONAL_LINKS[:instant_fees_index_link].each do |mod| %>

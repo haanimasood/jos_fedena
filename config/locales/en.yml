@@ -1542,6 +1542,9 @@ en: # locale
   create_fee_collection: "Create Fee Collection"
   creates_new_fee_collecting_dates: "Creates new fee collecting dates"
   fees_defaulters_text: "Fees Defaulters"
+  # HM TEMP
+  fees_print_text: "Print Fee Vouchers"
+  # HM END TEMP
   fee_discounts: "Fee Discounts"
   view_discount: "View discount"
   select_discount_type: "Select discount type"
@@ -1657,6 +1660,9 @@ en: # locale
   displays_fees_structure_for_student: "Displays fees Structure for student"
   defaulters: "Defaulters"
   students_with_fees_dues: "Students with fees dues"
+  # HM TEMP
+  students_print_voucher: "Printing of fee vouchers for students"
+  # HM END TEMP
   submission: "Submission"
   create_aditional_fees: "Create Aditional Fees"
   fees_collection: "Fees Collection"

@@ -54,12 +54,16 @@ class WickedPdf
     end
 
     def make_option(name, value, type=:string)
-      "--#{name.gsub('_', '-')} " + case type
-        when :boolean then ""
-        when :numeric then value.to_s
-		when :hf then "#{value}"
-        else "'#{value}'"
-      end + " "
+      if name == "orientation" and value == "Landscape"
+        "-O landscape "
+      else
+        "--#{name.gsub('_', '-')} " + case type
+          when :boolean then ""
+          when :numeric then value.to_s
+    		when :hf then "#{value}"
+            else "'#{value}'"
+        end + " "
+      end
     end
 
     def make_options(options, names, prefix="", type=:string)
@@ -135,6 +139,7 @@ class WickedPdf
                                     :dpi,
                                     :encoding,
                                     :user_style_sheet])
+                                 
         r +=make_options(options, [ :redirect_delay,
                                     :zoom,
                                     :page_offset], "", :numeric)
